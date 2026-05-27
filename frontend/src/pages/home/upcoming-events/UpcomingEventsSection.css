@@ -1,0 +1,153 @@
+.upcoming-events-section {
+  padding: 72px 0 64px;
+  background: #f4f7f5;
+}
+
+.upcoming-events-section .events-header-wrap {
+  max-width: 1280px;
+  margin: 0 auto 40px;
+  padding: 0 24px;
+}
+
+.upcoming-events-section .events-header {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .upcoming-events-section .events-header {
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+}
+
+.upcoming-events-section .events-header-text .subtitle {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 16px;
+  color: #192335;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+}
+
+.upcoming-events-section .events-header-text .subtitle::before {
+  content: "";
+  width: 40px;
+  height: 2px;
+  background: #a4da01;
+}
+
+.upcoming-events-section .events-header-text .title {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+
+.upcoming-events-section .events-header-text .title .compete {
+  color: #192335;
+}
+
+.upcoming-events-section .events-header-text .title .conquer {
+  color: #6b7280;
+}
+
+.upcoming-events-section .view-all-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 999px;
+  background: #a4da01;
+  padding: 10px 10px 10px 20px;
+  color: #0a0f14;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background-color 0.25s ease;
+  white-space: nowrap;
+}
+
+.upcoming-events-section .view-all-btn:hover {
+  background: #b8ef1a;
+}
+
+.upcoming-events-section .view-all-btn .arrow {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(10, 15, 20, 0.12);
+  font-size: 16px;
+}
+
+.upcoming-events-section .events-slide-two {
+  width: 100%;
+  overflow: hidden;
+}
+
+.upcoming-events-section .events-carousel-viewport.slick-list {
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  cursor: grab;
+  user-select: none;
+  padding: 0 50px;
+  -webkit-overflow-scrolling: touch;
+}
+
+.upcoming-events-section .events-carousel-viewport.is-dragging {
+  cursor: grabbing;
+  scroll-behavior: auto;
+}
+
+.upcoming-events-section .events-carousel-viewport.is-dragging * {
+  pointer-events: none;
+}
+
+.upcoming-events-section .events-carousel-viewport::-webkit-scrollbar {
+  display: none;
+}
+
+.upcoming-events-section .events-carousel-track.slick-track {
+  display: flex;
+  gap: 24px;
+  width: max-content;
+  padding: 4px 0 8px;
+}
+
+.upcoming-events-section .event-card-slide {
+  flex: 0 0 434px;
+  width: 434px;
+  scroll-snap-align: center;
+}
+
+@media (max-width: 1023px) {
+  .upcoming-events-section .events-carousel-viewport.slick-list {
+    padding: 0 32px;
+  }
+
+  .upcoming-events-section .event-card-slide {
+    flex: 0 0 340px;
+    width: 340px;
+  }
+}
+
+@media (max-width: 767px) {
+  .upcoming-events-section .events-carousel-viewport.slick-list {
+    padding: 0 20px;
+  }
+
+  .upcoming-events-section .event-card-slide {
+    flex: 0 0 calc(100vw - 64px);
+    width: calc(100vw - 64px);
+  }
+}

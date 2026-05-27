@@ -1,0 +1,170 @@
+.event-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  height: 100%;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 8px 30px rgba(25, 35, 53, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(25, 35, 53, 0.12);
+}
+
+.event-card-image {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+}
+
+.event-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.event-card:hover .event-card-image img {
+  transform: scale(1.05);
+}
+
+.event-card-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(10, 15, 20, 0.85) 0%, rgba(10, 15, 20, 0.2) 55%, transparent 100%);
+}
+
+.event-badge {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  z-index: 2;
+  border-radius: 6px;
+  background: #a4da01;
+  padding: 5px 10px;
+  color: #0a0f14;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.event-card-title {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  right: 16px;
+  z-index: 2;
+  margin: 0;
+  color: #fff;
+  font-size: 1.125rem;
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.event-card-body {
+  padding: 20px 20px 22px;
+}
+
+.event-details-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px 20px;
+  margin-bottom: 20px;
+}
+
+.event-detail label {
+  display: block;
+  margin-bottom: 4px;
+  color: #9ca3af;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.event-detail span {
+  display: block;
+  color: #192335;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.event-progress-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  color: #9ca3af;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.event-progress-track {
+  height: 6px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: #e5e7eb;
+}
+
+.event-progress-fill {
+  height: 100%;
+  border-radius: 999px;
+  background: #a4da01;
+  transition: width 0.4s ease;
+}
+
+.register-team-btn {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  overflow: hidden;
+  border: none;
+  border-radius: 8px;
+  background: #192335;
+  padding: 14px 16px 14px 56px;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+}
+
+.register-team-btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 44px;
+  background: repeating-linear-gradient(
+    -45deg,
+    rgba(255, 255, 255, 0.07) 0,
+    rgba(255, 255, 255, 0.07) 3px,
+    transparent 3px,
+    transparent 7px
+  );
+}
+
+.event-card:hover .register-team-btn {
+  background: #a4da01;
+  color: #0a0f14;
+}
+
+.event-card:hover .register-team-btn::before {
+  background: repeating-linear-gradient(
+    -45deg,
+    rgba(10, 15, 20, 0.08) 0,
+    rgba(10, 15, 20, 0.08) 3px,
+    transparent 3px,
+    transparent 7px
+  );
+}

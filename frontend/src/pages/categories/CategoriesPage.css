@@ -1,0 +1,126 @@
+.categories-page {
+  background: #f4f7f5;
+  color: #192335;
+}
+
+.categories-page-hero {
+  position: relative;
+  overflow: hidden;
+  background: #192335;
+  padding: 48px 0 56px;
+}
+
+.categories-page-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(30deg, rgba(164, 218, 1, 0.06) 12%, transparent 12.5%, transparent 87%, rgba(164, 218, 1, 0.06) 87.5%, rgba(164, 218, 1, 0.06)),
+    linear-gradient(150deg, rgba(164, 218, 1, 0.06) 12%, transparent 12.5%, transparent 87%, rgba(164, 218, 1, 0.06) 87.5%, rgba(164, 218, 1, 0.06));
+  background-size: 18px 32px;
+  pointer-events: none;
+}
+
+.categories-page-hero-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.categories-page-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.categories-page-back:hover {
+  color: #a4da01;
+}
+
+.categories-page-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 14px;
+  color: #a4da01;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+}
+
+.categories-page-eyebrow::before {
+  content: "";
+  width: 40px;
+  height: 2px;
+  background: #a4da01;
+}
+
+.categories-page-title {
+  margin: 0;
+  max-width: 720px;
+  color: #fff;
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+
+.categories-page-title span {
+  color: #a4da01;
+}
+
+.categories-page-copy {
+  margin: 14px 0 0;
+  max-width: 560px;
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.categories-page-body {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 40px 24px 80px;
+}
+
+.categories-page-section-title {
+  margin: 0 0 24px;
+  color: #192335;
+  font-size: 1.1rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.categories-page-count {
+  color: #097e52;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.categories-page-status {
+  padding: 48px 24px;
+  border: 1px dashed #cbd5e1;
+  border-radius: 14px;
+  background: #fff;
+  text-align: center;
+  color: #64748b;
+  font-size: 0.95rem;
+}
+
+.categories-page-status.error {
+  border-color: #fecaca;
+  color: #b91c1c;
+  background: #fef2f2;
+}

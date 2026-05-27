@@ -1,0 +1,156 @@
+.get-in-touch-section {
+  background: #f4f7f5;
+  padding: 48px 0 80px;
+}
+
+.get-in-touch-inner {
+  display: grid;
+  gap: 48px;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+@media (min-width: 1024px) {
+  .get-in-touch-inner {
+    grid-template-columns: 1fr 1.1fr;
+    align-items: start;
+    gap: 64px;
+  }
+}
+
+.get-in-touch-section .contact-eyebrow {
+  margin: 0 0 12px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #097e52;
+}
+
+.get-in-touch-section .contact-info-title {
+  margin: 0 0 16px;
+  font-size: clamp(1.75rem, 3vw, 2.25rem);
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  color: #192335;
+}
+
+.get-in-touch-section .contact-info-copy {
+  margin: 0 0 28px;
+  max-width: 420px;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #64748b;
+}
+
+.get-in-touch-section .contact-details-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 20px;
+}
+
+.get-in-touch-section .contact-details-list li {
+  display: grid;
+  gap: 4px;
+}
+
+.get-in-touch-section .contact-detail-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #94a3b8;
+}
+
+.get-in-touch-section .contact-detail-value {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #192335;
+  text-decoration: none;
+}
+
+.get-in-touch-section a.contact-detail-value:hover {
+  color: #097e52;
+}
+
+.get-in-touch-section .contact-form {
+  display: grid;
+  gap: 20px;
+  padding: 32px;
+  border-radius: 16px;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 8px 30px rgba(25, 35, 53, 0.06);
+}
+
+.get-in-touch-section .contact-form-row {
+  display: grid;
+  gap: 20px;
+}
+
+@media (min-width: 640px) {
+  .get-in-touch-section .contact-form-row {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.get-in-touch-section .contact-field {
+  display: grid;
+  gap: 8px;
+}
+
+.get-in-touch-section .contact-field span {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #475569;
+}
+
+.get-in-touch-section .contact-field input,
+.get-in-touch-section .contact-field textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  font: inherit;
+  color: #192335;
+  background: #fff;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.get-in-touch-section .contact-field input:focus,
+.get-in-touch-section .contact-field textarea:focus {
+  outline: none;
+  border-color: #097e52;
+  box-shadow: 0 0 0 3px rgba(9, 126, 82, 0.12);
+}
+
+.get-in-touch-section .contact-field textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.get-in-touch-section .contact-submit-btn {
+  justify-self: start;
+  margin-top: 4px;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 999px;
+  background: #a4da01;
+  color: #0a0f14;
+  font-size: 0.875rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.get-in-touch-section .contact-submit-btn:hover {
+  background: #b8ef1a;
+}

@@ -1,0 +1,141 @@
+.how-it-works-section {
+  position: relative;
+  overflow: hidden;
+  border-top: 1px solid rgba(164, 218, 1, 0.35);
+  border-bottom: 1px solid rgba(164, 218, 1, 0.35);
+  background-color: #192335;
+  background-image:
+    linear-gradient(30deg, rgba(164, 218, 1, 0.05) 12%, transparent 12.5%, transparent 87%, rgba(164, 218, 1, 0.05) 87.5%, rgba(164, 218, 1, 0.05)),
+    linear-gradient(150deg, rgba(164, 218, 1, 0.05) 12%, transparent 12.5%, transparent 87%, rgba(164, 218, 1, 0.05) 87.5%, rgba(164, 218, 1, 0.05));
+  background-size: 18px 32px;
+  padding: 72px 0 80px;
+}
+
+.how-it-works-inner {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.how-it-works-header {
+  max-width: 640px;
+  margin-bottom: 40px;
+}
+
+.how-it-works-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 16px;
+  color: #a4da01;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+}
+
+.how-it-works-eyebrow::before {
+  content: "";
+  width: 40px;
+  height: 2px;
+  background: #a4da01;
+}
+
+.how-it-works-title {
+  margin: 0;
+  color: #fff;
+  font-size: clamp(1.85rem, 4vw, 2.75rem);
+  font-weight: 800;
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+
+.how-it-works-title span {
+  color: #a4da01;
+}
+
+.how-it-works-description {
+  margin: 14px 0 0;
+  max-width: 520px;
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.how-it-works-grid {
+  display: grid;
+  gap: 20px;
+}
+
+@media (min-width: 640px) {
+  .how-it-works-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .how-it-works-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+.how-it-works-card {
+  position: relative;
+  padding: 24px 22px;
+  border: 1px solid rgba(164, 218, 1, 0.22);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.04);
+  transition: border-color 0.2s ease, background-color 0.2s ease, transform 0.2s ease;
+}
+
+.how-it-works-card:hover {
+  border-color: #a4da01;
+  background: rgba(164, 218, 1, 0.08);
+  transform: translateY(-2px);
+}
+
+.how-it-works-card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.how-it-works-icon {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: #a4da01;
+  color: #0a0f14;
+  font-size: 1.25rem;
+}
+
+.how-it-works-step {
+  color: rgba(164, 218, 1, 0.35);
+  font-size: 2rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.how-it-works-card:hover .how-it-works-step {
+  color: #a4da01;
+}
+
+.how-it-works-card-title {
+  margin: 0 0 10px;
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.how-it-works-card-copy {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.58);
+  font-size: 0.875rem;
+  line-height: 1.65;
+}

@@ -1,0 +1,118 @@
+.contact-us-section {
+  background: #192335;
+}
+
+.contact-hero {
+  position: relative;
+  min-height: clamp(420px, 52vh, 580px);
+  overflow: hidden;
+  border-radius: 40px 40px 0 0;
+}
+
+.contact-hero-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
+}
+
+.contact-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(to right, rgba(10, 15, 20, 0.92) 0%, rgba(10, 15, 20, 0.55) 45%, rgba(10, 15, 20, 0.2) 100%),
+    linear-gradient(to top, rgba(10, 15, 20, 0.45) 0%, transparent 50%);
+}
+
+.contact-hero-inner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+  min-height: clamp(420px, 52vh, 580px);
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 120px 24px 48px;
+}
+
+.contact-hero-copy {
+  max-width: 640px;
+}
+
+.contact-hero-title {
+  margin: 0 0 32px;
+  font-weight: 900;
+  line-height: 0.92;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+
+.contact-hero-title .line-white {
+  display: block;
+  font-size: clamp(3rem, 9vw, 6.5rem);
+  color: #fff;
+}
+
+.contact-hero-title .line-accent {
+  display: block;
+  font-size: clamp(3rem, 9vw, 6.5rem);
+  color: #a4da01;
+}
+
+.contact-hero-title .line-outline {
+  display: block;
+  font-size: clamp(3rem, 9vw, 6.5rem);
+  color: transparent;
+  -webkit-text-stroke: 2px rgba(255, 255, 255, 0.95);
+}
+
+.contact-play-btn {
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  width: clamp(100px, 12vw, 140px);
+  height: clamp(100px, 12vw, 140px);
+  margin-bottom: 8px;
+  border: none;
+  border-radius: 50%;
+  background: #fff;
+  color: #192335;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+}
+
+.contact-play-btn:hover {
+  transform: scale(1.04);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.3);
+}
+
+.contact-play-text {
+  font-size: clamp(0.65rem, 1.2vw, 0.78rem);
+  font-weight: 900;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media (max-width: 767px) {
+  .contact-hero {
+    border-radius: 24px 24px 0 0;
+  }
+
+  .contact-hero-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 100px;
+    padding-bottom: 36px;
+  }
+
+  .contact-play-btn {
+    align-self: flex-end;
+    margin-bottom: 0;
+  }
+}
